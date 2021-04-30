@@ -12,18 +12,16 @@ import processing.palettes.*;
 Palettes p;
 
 def setup():
-	size(1000, 1000);
+  size(1000, 1000);
 
 def draw():
-	Palettes p = new Palettes(this);
-
-	println(p.paletteNames);
-
-	p.loadPalette("flag");
+  Palettes p = new Palettes(this);
+  println(p.paletteNames);
+  p.loadPalette("flag");
 ```
 
 ## Overview
-<p align="center"><img src="resources/overview.png" alt="overview" width="500"/></p>
+<p align="center"><img src="resources/overview.png" alt="overview" width="700"/></p>
 
 ## Resources
 Useful documentation and similar projects for implementing a custom Processing library.
