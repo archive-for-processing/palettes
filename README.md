@@ -7,24 +7,26 @@ Clone this repository into the Processing libraries directory `/Processing/libra
 
 ## Usage
 ```processing
-import processing.palettes.*;
+import palettes.*;
 
 Palettes p;
 
-def setup():
+void setup() {
   size(1000, 1000);
+}
 
-def draw():
+void draw() {
   Palettes p = new Palettes(this);
   println(p.paletteNames);
 
-  p.loadPalette("flag");
+  p.getPalette("flag");
 
   background(p.background);
 
   fill(p.colors[0]);
   stroke(p.stroke);
   rect(200, 200, 200, 200);
+}
 ```
 
 ## Overview
