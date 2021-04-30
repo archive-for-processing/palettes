@@ -17,7 +17,14 @@ def setup():
 def draw():
   Palettes p = new Palettes(this);
   println(p.paletteNames);
+
   p.loadPalette("flag");
+
+  background(p.background);
+
+  fill(p.colors[0]);
+  stroke(p.stroke);
+  rect(200, 200, 200, 200);
 ```
 
 ## Overview
